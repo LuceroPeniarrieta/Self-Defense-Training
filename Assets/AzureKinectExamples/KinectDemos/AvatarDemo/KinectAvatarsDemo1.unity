@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &5
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 140217960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -176,8 +176,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
@@ -209,7 +207,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 140217960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
@@ -508,7 +506,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 606286476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -525,7 +523,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 606286476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
@@ -609,6 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b531f336dfee5f438f94ed501caefc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useMultiCamConfig: 0
   getDepthFrames: 1
   getColorFrames: 0
   getInfraredFrames: 0
@@ -675,7 +674,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 720034755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -694,7 +693,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 720034755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -966,8 +965,11 @@ MonoBehaviour:
   recordingFile: 
   minDistance: 0.5
   maxDistance: 10
+  pointCloudResolution: 0
   pointCloudVertexTexture: {fileID: 0}
   pointCloudColorTexture: {fileID: 0}
+  frameSourceFlags: 0
+  sensorRotValueY: 0
   colorCameraMode: 35
   depthCameraMode: 35
 --- !u!1 &1482082490
@@ -1014,6 +1016,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1062,6 +1065,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1662525337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_Name
+      value: Yuna FBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400178, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5457892e82787d40ab5058000a62f31, type: 3}
+--- !u!1 &1662525338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100178, guid: f5457892e82787d40ab5058000a62f31,
+    type: 3}
+  m_PrefabInstance: {fileID: 1662525337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1662525339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662525338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c52c07402f7274cab64e484b1bddc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
+  mirroredMovement: 1
+  verticalMovement: 1
+  externalRootMotion: 0
+  externalHeadRotation: 0
+  externalHandRotations: 0
+  fingerOrientations: 1
+  moveRate: 1
+  smoothFactor: 10
+  lateUpdateAvatar: 0
+  offsetNode: {fileID: 0}
+  posRelativeToCamera: {fileID: 0}
+  posRelOverlayColor: 0
+  backgroundPlane: {fileID: 0}
+  posRelInvertedZ: 0
+  groundedFeet: 1
+  applyMuscleLimits: 0
+  flipLeftRight: 0
+  horizontalOffset: 0
+  verticalOffset: 0
+  forwardOffset: 0
 --- !u!1 &1930565743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,12 +1346,17 @@ MonoBehaviour:
   recordingFile: 
   minDistance: 0.5
   maxDistance: 10
+  pointCloudResolution: 0
   pointCloudVertexTexture: {fileID: 0}
   pointCloudColorTexture: {fileID: 0}
+  frameSourceFlags: 0
+  sensorRotValueY: 0
   colorCameraMode: 2
   depthCameraMode: 2
   deviceSyncMode: 0
   subDeviceDelayUsec: 0
+  playbackPosSeconds: -1
+  loopPlayback: 0
 --- !u!1 &2060897184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1404,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2060897184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1309,8 +1413,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
@@ -1342,7 +1444,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2060897184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
@@ -1396,8 +1498,12 @@ MonoBehaviour:
   recordingFile: 
   minDistance: 0.5
   maxDistance: 10
+  pointCloudResolution: 0
   pointCloudVertexTexture: {fileID: 0}
   pointCloudColorTexture: {fileID: 0}
+  frameSourceFlags: 0
+  sensorRotValueY: 0
+  usersFaceBackwards: 0
 --- !u!1 &2132550428
 GameObject:
   m_ObjectHideFlags: 0
