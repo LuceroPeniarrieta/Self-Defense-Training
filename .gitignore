@@ -57,3 +57,12 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+cublas64_100.dll
+cudart64_100.dll
+cudnn64_7.dll
+dnn_model_2_0.onnx
+onnxruntime.dll
+vcomp140.dll
+Assets/AzureKinectExamples/SDK/RealSenseSDK2.0/
+Assets/AzureKinectExamples/SDK/KinectSDK2.0/
+Assets/AzureKinectExamples/SDK/
