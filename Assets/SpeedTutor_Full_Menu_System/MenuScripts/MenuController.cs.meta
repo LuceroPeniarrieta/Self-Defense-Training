@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 9bcbdb54739de444ab8e0dc4b527da94
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - menuDefaultCanvas: {instanceID: 0}
+  - GeneralSettingsCanvas: {instanceID: 0}
+  - graphicsMenu: {instanceID: 0}
+  - soundMenu: {instanceID: 0}
+  - gameplayMenu: {instanceID: 0}
+  - controlsMenu: {instanceID: 0}
+  - confirmationMenu: {instanceID: 0}
+  - noSaveDialog: {instanceID: 0}
+  - newGameDialog: {instanceID: 0}
+  - loadGameDialog: {instanceID: 0}
+  - controllerSenText: {instanceID: 0}
+  - controllerSenSlider: {instanceID: 0}
+  - brightnessEffect: {instanceID: 0}
+  - brightnessSlider: {instanceID: 0}
+  - brightnessText: {instanceID: 0}
+  - volumeText: {instanceID: 0}
+  - volumeSlider: {instanceID: 0}
+  - invertYToggle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
