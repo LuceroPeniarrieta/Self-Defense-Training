@@ -121,7 +121,7 @@ namespace com.rfilkov.components
             if (progressDisplayed)
                 return true;
 
-            string sGestureText = gesture + " detected";
+            string sGestureText = gesture + " detected - Succesfully!!!";
             if (gestureInfo != null)
             {
                 gestureInfo.text = sGestureText;

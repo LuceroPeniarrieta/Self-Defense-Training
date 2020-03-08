@@ -260,8 +260,7 @@ public class MenuController : MonoBehaviour
         if (ButtonType == "Yes")
         {
             //SceneManager.LoadScene(level);
-            SceneManager.LoadScene("gym env", LoadSceneMode.Single);
-            SceneManager.LoadScene("KinectAvatarsDemo1", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Dashboard", LoadSceneMode.Single);
         }
 
         if (ButtonType == "No")

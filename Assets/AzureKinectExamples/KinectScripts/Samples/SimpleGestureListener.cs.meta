@@ -1,8 +1,13 @@
 fileFormatVersion: 2
 guid: 71efa4381866a5a4a8e2eb39849873bc
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gestureInfo: {instanceID: 0}
+  - checkMark: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

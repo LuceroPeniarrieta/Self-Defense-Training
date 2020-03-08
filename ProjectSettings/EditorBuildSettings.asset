@@ -17,4 +17,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AzureKinectExamples/KinectDemos/AvatarDemo/KinectAvatarsDemo1.unity
     guid: 4d589fa57be210d48ad7046a1af0d672
+  - enabled: 1
+    path: Assets/gym environment/Scene/gym env.unity
+    guid: aa240f35d2a02f6498127bba2721ea66
+  - enabled: 1
+    path: Assets/Scenes/Dashboard.unity
+    guid: 9f02e414fbd8b63429b83456d93b7bae
+  - enabled: 1
+    path: Assets/Scenes/HeelPalmStrike.unity
+    guid: b95384df47570a24b8ac4a68bd063041
+  - enabled: 1
+    path: Assets/Scenes/HammerStrike.unity
+    guid: 51fe1ea7a903ada40a32f7474918a2b3
+  - enabled: 1
+    path: Assets/Scenes/GroinKick.unity
+    guid: 9bf910c5c798b5041b0dfdbca6cc858b
+  - enabled: 1
+    path: Assets/Scenes/ElbowStrike.unity
+    guid: 1a85ed6c3cafda9499907ccaca324a14
+  - enabled: 1
+    path: Assets/Scenes/AlternativeElbowStrikes.unity
+    guid: a1a20cc49a6e17a48b23b00c577c26df
+  - enabled: 1
+    path: Assets/Scenes/BearHugAttack.unity
+    guid: 12988eb39825b7e41bda18e110424671
   m_configObjects: {}
