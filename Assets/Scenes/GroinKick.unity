@@ -237,6 +237,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1613383083}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745287642701242661, guid: 4cfd93b16ffec984e9e6c29c4b57466f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfd93b16ffec984e9e6c29c4b57466f, type: 3}
 --- !u!224 &305717505 stripped
@@ -774,6 +804,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1613383083}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 750828454644210500, guid: b710d3edec282994fb2021c605cccee0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b710d3edec282994fb2021c605cccee0, type: 3}
 --- !u!224 &894506880 stripped
@@ -1029,6 +1089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd74051416346948b2197c228268741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: GroinKick
 --- !u!1 &1656459144
 GameObject:
   m_ObjectHideFlags: 0
