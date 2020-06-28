@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e84c9862265a1104a9d724503d4111aa
   - enabled: 0
-    path: Assets/SpeedTutor_Full_Menu_System/Scenes/Level1_Demo.unity
+    path: 
     guid: a29848c6cbdc245439fd7641ab34b8bc
   - enabled: 0
-    path: Assets/Scenes/Gym.unity
+    path: 
     guid: b42ca4c5c936383429d2318c931f7ad2
   - enabled: 1
     path: Assets/AzureKinectExamples/KinectDemos/AvatarDemo/KinectAvatarsDemo1.unity
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BearHugAttack.unity
     guid: 12988eb39825b7e41bda18e110424671
+  - enabled: 1
+    path: Assets/Scenes/Results.unity
+    guid: d806fda18e8a2664c88133d8f489d79a
   m_configObjects: {}

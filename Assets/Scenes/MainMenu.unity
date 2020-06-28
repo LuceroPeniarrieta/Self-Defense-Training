@@ -220,6 +220,110 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 980339796}
+    - target: {fileID: 114664129315136574, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Atras
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934346464246464, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Atras
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 224568192995839698, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -464.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 224568192995839698, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 490.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224568192995839698, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 224568192995839698, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 377.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114026329636207514, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Aplicar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114269775502156836, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Resetear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127820702261776, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Aplicar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987528576725276, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Resetear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835905219775522, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Salir
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803030738577818, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Iniciar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114204938295963062, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Graficos
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263711298867918, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Opciones
+      objectReference: {fileID: 0}
+    - target: {fileID: 114826242186275584, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Graficos
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114444930110935032, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Sonido
+      objectReference: {fileID: 0}
+    - target: {fileID: 114208139526314110, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Brillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114870446454015422, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Si
+      objectReference: {fileID: 0}
+    - target: {fileID: 114208141391937272, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Quieres empezar una nueva partida?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114861908762729074, guid: ed022c6eaaa372f498c83d69665e2adc,
+        type: 3}
+      propertyPath: m_Text
+      value: Volumen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed022c6eaaa372f498c83d69665e2adc, type: 3}
 --- !u!114 &384942025 stripped

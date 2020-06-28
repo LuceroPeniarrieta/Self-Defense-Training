@@ -66,37 +66,37 @@ namespace com.rfilkov.kinect
     public enum GestureType
     {
         None = 0,
-        RaiseRightHand,
-        RaiseLeftHand,
+        ManoDerechaLevantada,
+        ManoIzquierdaLevantada,
         Psi,
         Tpose,
         Stop,
         Wave,
-        SwipeLeft,
-        SwipeRight,
+        DeslizamientoIzquierdo,
+        DeslizamientoDerecho,
         SwipeUp,
         SwipeDown,
         ZoomIn,
         ZoomOut,
         Wheel,
-        Jump,
-        Squat,
+        Salto,
+        Cuclillas,
         Push,
         Pull,
         ShoulderLeftFront,
         ShoulderRightFront,
-        LeanLeft,
-        LeanRight,
-        LeanForward,
-        LeanBack,
-        KickLeft,
-        KickRight,
+        InclinacionIzquierda,
+        InclinacionDerecha,
+        InclincacionDelantera,
+        InclincacionTrasera,
+        PatadaIzquierda,
+        PatadaDerecha,
         Run,
 
-        RaisedRightHorizontalLeftHand,   // by Andrzej W
-        RaisedLeftHorizontalRightHand,
+        ManoDerechaLevantadaHorizontalmente,   
+        ManoIzquierdaLevantadaHorizontalmente,
 
-        TouchRightElbow,   // suggested by Nayden N.
+        TouchRightElbow,   
         TouchLeftElbow,
 
         UserGesture1 = 101,
@@ -915,7 +915,7 @@ namespace com.rfilkov.kinect
             switch (gestureData.gesture)
             {
                 // check for RaiseRightHand
-                case GestureType.RaiseRightHand:
+                case GestureType.ManoDerechaLevantada:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection
@@ -939,7 +939,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for RaiseLeftHand
-                case GestureType.RaiseLeftHand:
+                case GestureType.ManoIzquierdaLevantada:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection
@@ -1051,7 +1051,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for raised right hand & horizontal left hand 
-                case GestureType.RaisedRightHorizontalLeftHand:
+                case GestureType.ManoDerechaLevantadaHorizontalmente:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection
@@ -1084,7 +1084,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for raised left hand & horizontal right hand 
-                case GestureType.RaisedLeftHorizontalRightHand:
+                case GestureType.ManoIzquierdaLevantadaHorizontalmente:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection
@@ -1240,7 +1240,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for SwipeLeft
-                case GestureType.SwipeLeft:
+                case GestureType.DeslizamientoIzquierdo:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1
@@ -1284,7 +1284,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for SwipeRight
-                case GestureType.SwipeRight:
+                case GestureType.DeslizamientoDerecho:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1
@@ -1566,7 +1566,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for Jump
-                case GestureType.Jump:
+                case GestureType.Salto:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1
@@ -1601,7 +1601,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for Squat
-                case GestureType.Squat:
+                case GestureType.Cuclillas:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1
@@ -1808,7 +1808,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for LeanLeft
-                case GestureType.LeanLeft:
+                case GestureType.InclinacionIzquierda:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1  (right shoulder is left of the right hip, means leaning left)
@@ -1847,7 +1847,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for LeanRight
-                case GestureType.LeanRight:
+                case GestureType.InclinacionDerecha:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1 (left shoulder is right of the left hip, means leaning right)
@@ -1886,7 +1886,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for LeanForward
-                case GestureType.LeanForward:
+                case GestureType.InclincacionDelantera:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1 (shoulder center in front of hip center, means leaning forward)
@@ -1925,7 +1925,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for LeanBack
-                case GestureType.LeanBack:
+                case GestureType.InclincacionTrasera:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1 (shoulder center behind hip center, means leaning back)
@@ -1964,7 +1964,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for KickLeft
-                case GestureType.KickLeft:
+                case GestureType.PatadaIzquierda:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1
@@ -1999,7 +1999,7 @@ namespace com.rfilkov.kinect
                     break;
 
                 // check for KickRight
-                case GestureType.KickRight:
+                case GestureType.PatadaDerecha:
                     switch (gestureData.state)
                     {
                         case 0:  // gesture detection - phase 1

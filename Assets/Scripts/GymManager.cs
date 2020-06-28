@@ -5,6 +5,11 @@ public class GymManager : MonoBehaviour
 {
     public string sceneName;
 
+    public void LoadResultsScene()
+    {
+        SceneManager.LoadScene("Results", LoadSceneMode.Single);
+    }
+
     public void LoadNewScene() 
     {
         SceneManager.LoadScene("gym env", LoadSceneMode.Single);
@@ -42,5 +47,11 @@ public class GymManager : MonoBehaviour
         SceneManager.UnloadSceneAsync("gym env");
         SceneManager.UnloadSceneAsync("KinectAvatarsDemo1");
         SceneManager.LoadScene("Dashboard", LoadSceneMode.Single);
+    }
+
+    public void UnloadResultsScene()
+    {
+        SceneManager.UnloadSceneAsync("Results");
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }

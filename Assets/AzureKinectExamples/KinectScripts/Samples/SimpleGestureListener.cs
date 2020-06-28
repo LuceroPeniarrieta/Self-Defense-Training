@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using com.rfilkov.kinect;
-
+using Assets.Scripts;
 
 namespace com.rfilkov.components
 {
@@ -74,8 +74,9 @@ namespace com.rfilkov.components
                 case GestureType.ZoomIn:
                     if (progress > 0.5f && gestureInfo != null)
                     {
-                        string sGestureText = string.Format("{0} - {1:F0}%", gesture, screenPos.z * 100f);
+                        string sGestureText = string.Format("{0} - {1:F0}%", gesture, screenPos.z * 100f) + " realizado - Exitosamente";
                         gestureInfo.text = sGestureText;
+                        DataStore.Text = DataStore.Text + "\n" + sGestureText;
 
                         progressDisplayed = true;
                         progressGestureTime = Time.realtimeSinceStartup;
@@ -83,14 +84,15 @@ namespace com.rfilkov.components
                     break;
 
                 case GestureType.Wheel:
-                case GestureType.LeanLeft:
-                case GestureType.LeanRight:
-                case GestureType.LeanForward:
-                case GestureType.LeanBack:
+                case GestureType.InclinacionIzquierda:
+                case GestureType.InclinacionDerecha:
+                case GestureType.InclincacionDelantera:
+                case GestureType.InclincacionTrasera:
                     if (progress > 0.5f && gestureInfo != null)
                     {
-                        string sGestureText = string.Format("{0} - {1:F0} degrees", gesture, screenPos.z);
+                        string sGestureText = string.Format("{0} - {1:F0} grados", gesture, screenPos.z) + " realizado - Exitosamente";
                         gestureInfo.text = sGestureText;
+                        DataStore.Text = DataStore.Text + "\n" + sGestureText;
 
                         progressDisplayed = true;
                         progressGestureTime = Time.realtimeSinceStartup;
@@ -100,8 +102,10 @@ namespace com.rfilkov.components
                 case GestureType.Run:
                     if (progress > 0.5f && gestureInfo != null)
                     {
-                        string sGestureText = string.Format("{0} - progress: {1:F0}%", gesture, progress * 100);
+                        string sGestureText = string.Format("{0} - progress: {1:F0}%", gesture, progress * 100) + " realizado - Exitosamente";
                         gestureInfo.text = sGestureText;
+                        DataStore.Text = sGestureText;
+                        DataStore.Text = DataStore.Text + "\n" + sGestureText;
 
                         progressDisplayed = true;
                         progressGestureTime = Time.realtimeSinceStartup;
@@ -121,10 +125,12 @@ namespace com.rfilkov.components
             if (progressDisplayed)
                 return true;
 
-            string sGestureText = gesture + " detected - Succesfully!!!";
+            string sGestureText = gesture + " realizado - Exitosamente";
             if (gestureInfo != null)
             {
                 gestureInfo.text = sGestureText;
+                DataStore.Text = sGestureText;
+                DataStore.Text = DataStore.Text + "\n" + sGestureText;
             }
 
             return true;
